@@ -702,11 +702,19 @@ This project was developed as part of an academic capstone initiative exploring 
 
 ---
 
-## 22. License
+## 22. Pre-trained Models
 
-A license should be added to the repository to define the terms under which the project source code and other materials may be used, modified, and distributed.
+TRIAGEAI integrates three primary model components for multimodal emergency triage:
 
-If datasets, pretrained models, or third-party assets are used, their individual licensing and redistribution requirements must also be respected.
+| Model | Architecture | Model Files |
+|---|---|---|
+| Clinical Triage | XGBoost | `clinical_xgboost.json`, `clinical_preprocessor.joblib` |
+| ECG Analysis | 1D CNN | `ecg_1dcnn.pt` |
+| X-ray Analysis | DenseNet-121 | [Download `xray_densenet.pt`](https://drive.google.com/file/d/1A5NOvPJDh84WXsHI4V30EcR7q8havMu_/view?usp=sharing) |
+
+**Note:** The X-ray DenseNet model is hosted externally due to GitHub's file size upload limit. Download it and place it inside `backend/trained_models/` before running the local imaging model.
+
+The medical imaging module also integrates Gemini for broader multimodal image analysis.
 
 ---
 
