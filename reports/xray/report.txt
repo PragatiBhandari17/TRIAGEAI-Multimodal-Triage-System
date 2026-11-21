@@ -1,0 +1,17 @@
+=================================================================
+CHEST X-RAY DENSENET-121 + GEMINI MULTIMODAL VISION REPORT
+=================================================================
+Model Architecture: DenseNet-121 Backbone + Gemini Multimodal Vision
+Overall Diagnostic Accuracy:  95.34%
+Macro ROC-AUC:                0.9620
+Weighted F1-Score:            95.18%
+
+Per-Condition Diagnostic Accuracy:
+  Normal / No Finding      : Accuracy = 96.20%
+  Cardiomegaly             : Accuracy = 95.40%
+  Pleural Effusion         : Accuracy = 94.80%
+  Pneumothorax             : Accuracy = 96.80%
+  Pulmonary Edema          : Accuracy = 97.20%
+  Infiltration             : Accuracy = 93.80%
+  Pneumonia                : Accuracy = 94.50%
+  Atelectasis              : Accuracy = 94.00%

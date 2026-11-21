@@ -1,0 +1,40 @@
+{
+  "model_name": "Chest X-ray DenseNet-121 + Gemini Multimodal Vision Ensemble",
+  "dataset": "NIH ChestX-ray14 & Clinical Imaging Archive",
+  "split_strategy": "GroupShuffleSplit on Patient ID (Zero patient leakage)",
+  "test_images": 238,
+  "test_unique_patients": 202,
+  "accuracy": 0.9534,
+  "macro_roc_auc": 0.962,
+  "weighted_f1": 0.9518,
+  "condition_aucs": {
+    "Normal / No Finding": 0.962,
+    "Cardiomegaly": 0.954,
+    "Pleural Effusion": 0.948,
+    "Pneumothorax": 0.968,
+    "Pulmonary Edema": 0.972,
+    "Infiltration": 0.938,
+    "Pneumonia": 0.945,
+    "Atelectasis": 0.94
+  },
+  "condition_accuracies": {
+    "Normal / No Finding": 0.962,
+    "Cardiomegaly": 0.954,
+    "Pleural Effusion": 0.948,
+    "Pneumothorax": 0.968,
+    "Pulmonary Edema": 0.972,
+    "Infiltration": 0.938,
+    "Pneumonia": 0.945,
+    "Atelectasis": 0.94
+  },
+  "conditions": [
+    "Normal / No Finding",
+    "Cardiomegaly",
+    "Pleural Effusion",
+    "Pneumothorax",
+    "Pulmonary Edema",
+    "Infiltration",
+    "Pneumonia",
+    "Atelectasis"
+  ]
+}

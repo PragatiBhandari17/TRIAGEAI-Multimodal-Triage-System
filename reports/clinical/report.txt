@@ -1,0 +1,21 @@
+=================================================================
+CLINICAL TRIAGE XGBOOST MODEL EVALUATION REPORT
+=================================================================
+Exact 5-Class Accuracy:       95.28%
+Within-1-Tier Accuracy:       100.00%
+Acute Triage Accuracy:        98.43%
+Acute ROC-AUC:                0.9855
+Macro ROC-AUC:                0.9756
+Weighted F1-Score:            95.48%
+
+                                  precision    recall  f1-score   support
+
+Level 1 (Critical Resuscitation)       1.00      1.00      1.00         5
+         Level 2 (High Emergent)       0.95      0.95      0.95        44
+       Level 3 (Moderate Urgent)       0.98      0.97      0.97        98
+              Level 4 (Low Risk)       0.99      0.92      0.96        92
+  Level 5 (Non-Urgent / Routine)       0.68      1.00      0.81        15
+
+                        accuracy                           0.95       254
+                       macro avg       0.92      0.97      0.94       254
+                    weighted avg       0.96      0.95      0.95       254
